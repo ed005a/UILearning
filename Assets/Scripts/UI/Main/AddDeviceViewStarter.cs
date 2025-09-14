@@ -1,13 +1,14 @@
 namespace App.UI
 {
-    public class MainViewStarter : IWindowStarter
+    public class AddDeviceViewStarter : IWindowStarter
     {
         public string GetGroup() => "Main";
-        public string GetName() => "MainView";
+        public string GetName() => "AddDeviceView";
 
         public void SetupModels(ViewController viewController)
         {
-            
+        
         }
+        
     }
 }

@@ -11,20 +11,14 @@ namespace App.UI
         public override void Init(IWindowStarter starter)
         {
             base.Init(starter);
-            
-        }
-
-        private void Awake()
-        {
             openWindowButton.onClick.AddListener(OpenWindow);
         }
-
+        
+        
         private void OpenWindow()
         {
             Debug.Log("OpenWindow");
-            GameObject window = Instantiate(childWindowPrefab);
-            
-            window.transform.SetAsLastSibling();
+            WindowsManager.Instance.CreateWindow<AddDeviceViewController>(new AddDeviceViewStarter()).Show();
         }
         
         
