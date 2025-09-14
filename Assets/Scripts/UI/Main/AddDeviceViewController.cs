@@ -11,15 +11,9 @@ namespace App.UI
         public override void Init(IWindowStarter starter)
         {
             base.Init(starter);
-        }
-
-        private void Awake()
-        {
-            Debug.Log("Child Window Control Awake");
+            Debug.Log("AddDeviceViewController Init");
             GameObject inputButtons = Instantiate(inputButtonsPrefab, parent);
-        
             GameObject inputFields = Instantiate(inputFieldsPrefab, parent);
         }
-        
     }
 }

@@ -523,9 +523,9 @@ MonoBehaviour:
   CloseAllChainOnClose: 0
   OnlyOneCanBeVisible: 0
   restoreHierarchyState: 1
-  inputButtonsPrefab: {fileID: 0}
-  inputFieldsPrefab: {fileID: 0}
-  parent: {fileID: 0}
+  inputButtonsPrefab: {fileID: 8299043030338367635, guid: 4b2616cbcd3e11e41898fce89c49f973, type: 3}
+  inputFieldsPrefab: {fileID: 1164375793649139301, guid: c2c8e1a1bf2348f45acfaccccf5c3706, type: 3}
+  parent: {fileID: 2344818631221157646}
 --- !u!222 &6952777648809988294
 CanvasRenderer:
   m_ObjectHideFlags: 0
