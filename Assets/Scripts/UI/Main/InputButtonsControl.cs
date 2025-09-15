@@ -12,7 +12,20 @@ public class InputButtonsControl : MonoBehaviour
     private void Awake()
     {
         addButton.onClick.AddListener(() => Debug.Log("Added device"));
-        closeButton.onClick.AddListener(() => Destroy(transform.parent.gameObject));
-        cancelButton.onClick.AddListener(() => Destroy(transform.parent.gameObject));
+        closeButton.onClick.AddListener(() => DestroyWindow());
+        cancelButton.onClick.AddListener(() => DestroyWindow());
+    }
+
+    private void DestroyWindow()
+    {
+        var windowList = WindowsManager.Instance.GetAllWindows();
+        foreach (var window in windowList)
+        {
+            if (window.name == transform.parent.name)
+            {
+                window.DestroyWindow();
+                break;
+            }
+        }
     }
 }

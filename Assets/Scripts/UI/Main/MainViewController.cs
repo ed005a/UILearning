@@ -17,7 +17,6 @@ namespace App.UI
         
         private void OpenWindow()
         {
-            Debug.Log("OpenWindow");
             WindowsManager.Instance.CreateWindow<AddDeviceViewController>(new AddDeviceViewStarter()).Show();
         }
         
